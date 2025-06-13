@@ -1,10 +1,10 @@
 ---
 hero:
-  title: library
+  title: damn
   description: A react library developed with dumi
   actions:
     - text: Hello
-      link: /
+      link: /guide
     - text: World
       link: /
 features:
@@ -18,5 +18,4 @@ features:
     emoji: 🚀
     description: Put ! description here
 ---
-
 kawhi-ui
