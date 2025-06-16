@@ -1,5 +1,6 @@
 import classNames from 'classnames';
 import React, { useMemo } from 'react';
+import { iconPositionMap } from './config';
 
 import './index.less';
 
@@ -9,6 +10,7 @@ interface IProps {
   size?: 'default' | 'large' | 'small';
   icon?: React.ReactNode;
   disabled?: boolean;
+  iconPosition?: 'start' | 'end';
 }
 
 // 声明全局的ts
@@ -21,6 +23,7 @@ const Button = (props: IProps) => {
     size = 'default',
     icon,
     disabled = false,
+    iconPosition,
     ...rest
   } = props;
 
@@ -40,8 +43,9 @@ const Button = (props: IProps) => {
 
   return (
     <button type="button" className={classnames} disabled={disabled} {...rest}>
-      {icon && icon}
+      {icon && iconPosition === iconPositionMap.start && icon}
       {children}
+      {icon && iconPosition === iconPositionMap.end && icon}
     </button>
   );
 };
