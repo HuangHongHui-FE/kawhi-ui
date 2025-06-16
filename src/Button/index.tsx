@@ -4,17 +4,17 @@ import React from 'react';
 import './index.less';
 
 interface IProps {
-  type: string;
-  children: React.ReactNode;
-  size: 'default' | 'large' | 'small';
+  type?: string;
+  children?: React.ReactNode;
+  size?: 'default' | 'large' | 'small';
+  icon?: React.ReactNode;
 }
 
 // 声明全局的ts
 const prefixClsButton = `${prefixCls}-button`;
 
 const Button = (props: IProps) => {
-  // __todo: size处理
-  const { type = 'default', children, size = 'default' } = props;
+  const { type = 'default', children, size = 'default', icon } = props;
 
   const classnames = classNames(
     prefixClsButton,
@@ -24,6 +24,7 @@ const Button = (props: IProps) => {
 
   return (
     <button type="button" className={classnames}>
+      {icon && icon}
       {children}
     </button>
   );
