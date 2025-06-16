@@ -1,10 +1,17 @@
 @prefixCls: 'kawhi';
 @prefixClsButton: ~'@{prefixCls}-button';
-@prefixClsButtonPrimary: ~'@{prefixClsButton}-primary';
-@prefixClsButtonDefault: ~'@{prefixClsButton}-default';
-@prefixClsButtonDashed: ~'@{prefixClsButton}-dashed';
-@prefixClsButtonText: ~'@{prefixClsButton}-text';
-@prefixClsButtonLink: ~'@{prefixClsButton}-link';
+
+// type
+@prefixClsButtonTypePrimary: ~'@{prefixClsButton}-type-primary';
+@prefixClsButtonTypeDefault: ~'@{prefixClsButton}-type-default';
+@prefixClsButtonTypeDashed: ~'@{prefixClsButton}-type-dashed';
+@prefixClsButtonTypeText: ~'@{prefixClsButton}-type-text';
+@prefixClsButtonTypeLink: ~'@{prefixClsButton}-type-link';
+
+// size
+@prefixClsButtonSizeSmall: ~'@{prefixClsButton}-size-small';
+@prefixClsButtonSizeDefault: ~'@{prefixClsButton}-size-default';
+@prefixClsButtonSizeLarge: ~'@{prefixClsButton}-size-large';
 
 .@{prefixClsButton} {
   cursor: pointer;
@@ -13,12 +20,13 @@
   height: 32px;
 }
 
-.@{prefixClsButton}.@{prefixClsButtonPrimary} {
+// type
+.@{prefixClsButtonTypePrimary} {
   background-color: rgb(22, 119, 255);
   color: rgb(255, 255, 255);
 }
 
-.@{prefixClsButton}.@{prefixClsButtonDefault} {
+.@{prefixClsButtonTypeDefault} {
   background-color: rgb(255, 255, 255);
   color: rgba(0, 0, 0, 0.88);
   border: 1px solid rgb(217, 217, 217);
@@ -28,7 +36,7 @@
   }
 }
 
-.@{prefixClsButton}.@{prefixClsButtonDashed} {
+.@{prefixClsButtonTypeDashed} {
   background-color: rgb(255, 255, 255);
   color: rgba(0, 0, 0, 0.88);
   border: 1px dashed rgb(217, 217, 217);
@@ -40,7 +48,7 @@
   }
 }
 
-.@{prefixClsButton}.@{prefixClsButtonText} {
+.@{prefixClsButtonTypeText} {
   background-color: transparent;
   color: rgba(0, 0, 0, 0.88);
 
@@ -49,11 +57,27 @@
   }
 }
 
-.@{prefixClsButton}.@{prefixClsButtonLink} {
+.@{prefixClsButtonTypeLink} {
   background-color: transparent;
   color: rgba(22, 119, 255);
 
   &:hover {
     color: rgba(22, 119, 255, 0.6);
   }
+}
+
+// size
+.@{prefixClsButtonSizeSmall} {
+  height: 24px;
+  font-size: 14px;
+}
+
+.@{prefixClsButtonSizeDefault} {
+  height: 32px;
+  font-size: 14px;
+}
+
+.@{prefixClsButtonSizeLarge} {
+  height: 40px;
+  font-size: 16px;
 }
