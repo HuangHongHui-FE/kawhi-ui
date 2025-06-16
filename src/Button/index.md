@@ -54,8 +54,9 @@ const Index = () => {
   return (
     <div>
       <Button
-        type="dash"
+        type="primary"
         icon={<i className="iconfont icon-kawhi-icon-sousuo" />}
+        iconPosition="start"
       >
         Primary Button
       </Button>
@@ -63,10 +64,39 @@ const Index = () => {
       <Button
         type="primary"
         icon={<i className="iconfont icon-kawhi-icon-sousuo" />}
+        iconPosition="end"
+      >
+        Primary Button
+      </Button>
+          
+      <Button
+        type="primary"
+        icon={<i className="iconfont icon-kawhi-icon-sousuo" />}
+        iconPosition="end"
       ></Button>
     </div>
   );
 };
 
 export default Index;
+
+```
+
+#### 按钮失效
+
+```jsx
+import { Button } from 'kawhi-ui';
+import React from 'react';
+const Index = () => {
+  return (
+    <div>
+      <Button type="primary" disabled>
+        Primary Button
+      </Button>
+    </div>
+  );
+};
+
+export default Index;
+
 ```

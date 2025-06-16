@@ -13,6 +13,9 @@
 @prefixClsButtonSizeDefault: ~'@{prefixClsButton}-size-default';
 @prefixClsButtonSizeLarge: ~'@{prefixClsButton}-size-large';
 
+// disabled
+@prefixClsButtonDisabled: ~'@{prefixClsButton}-disabled';
+
 .@{prefixClsButton} {
   cursor: pointer;
   border: none;
@@ -80,4 +83,11 @@
 .@{prefixClsButtonSizeLarge} {
   height: 40px;
   font-size: 16px;
+}
+
+// disabled
+.@{prefixClsButtonDisabled} {
+  cursor: not-allowed;
+  background-color: rgba(0, 0, 0, 0.1);
+  color: rgba(0, 0, 0, 0.25);
 }
