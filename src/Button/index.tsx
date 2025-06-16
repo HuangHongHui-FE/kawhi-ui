@@ -11,6 +11,7 @@ interface IProps {
   icon?: React.ReactNode;
   disabled?: boolean;
   iconPosition?: 'start' | 'end';
+  className?: string;
 }
 
 // 声明全局的ts
@@ -24,6 +25,7 @@ const Button = (props: IProps) => {
     icon,
     disabled = false,
     iconPosition,
+    className,
     ...rest
   } = props;
 
@@ -38,8 +40,12 @@ const Button = (props: IProps) => {
       cls = classNames(cls, `${prefixClsButton}-disabled`);
     }
 
+    if (className) {
+      cls = classNames(cls, className);
+    }
+
     return cls;
-  }, [type, size, disabled]);
+  }, [type, size, disabled, className]);
 
   return (
     <button type="button" className={classnames} disabled={disabled} {...rest}>
