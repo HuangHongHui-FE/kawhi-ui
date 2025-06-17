@@ -1,8 +1,3 @@
-# Tour
-
-漫游式引导
-
-```jsx
 import { Button, Tour } from 'kawhi-ui';
 import React, { useRef, useState } from 'react';
 const Index = () => {
@@ -49,4 +44,3 @@ const Index = () => {
   );
 };
 export default Index;
-```
