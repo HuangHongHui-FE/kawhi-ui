@@ -1,6 +1,12 @@
 @prefixCls: 'kawhi';
 @prefixClsTour: ~'@{prefixCls}-tour';
 
+// placement
+@prefixClsTourArrowPlacementTop: ~'@{prefixClsTour}-content-arrow-placement-top';
+@prefixClsTourArrowPlacementBottom: ~'@{prefixClsTour}-content-arrow-placement-bottom';
+@prefixClsTourArrowPlacementLeft: ~'@{prefixClsTour}-content-arrow-placement-left';
+@prefixClsTourArrowPlacementRight: ~'@{prefixClsTour}-content-arrow-placement-right';
+
 .rc-tour {
   position: absolute;
 
@@ -11,9 +17,12 @@
       border-radius: 8px;
       padding: 16px;
 
-      &-arrow {
+      .@{prefixClsTourArrowPlacementTop} {
         position: absolute;
-        z-index: 1;
+        left: 50%;
+        top: 100%;
+        transform: translateX(-50%);
+
         display: block;
         pointer-events: none;
         overflow: hidden;
@@ -22,7 +31,56 @@
         height: 0;
         border-left: 6px solid transparent;
         border-right: 6px solid transparent;
-        border-bottom: 8px solid #ffffff;
+        border-top: 6px solid #ffffff;
+      }
+
+      .@{prefixClsTourArrowPlacementBottom} {
+        position: absolute;
+        left: 50%;
+        top: 0px;
+        transform: translate(-50%, -100%);
+
+        display: block;
+        pointer-events: none;
+        overflow: hidden;
+
+        width: 0;
+        height: 0;
+        border-left: 6px solid transparent;
+        border-right: 6px solid transparent;
+        border-bottom: 6px solid #ffffff;
+      }
+      .@{prefixClsTourArrowPlacementLeft} {
+        position: absolute;
+        left: 100%;
+        top: 50%;
+        transform: translateY(-50%);
+
+        display: block;
+        pointer-events: none;
+        overflow: hidden;
+
+        width: 0;
+        height: 0;
+        border-top: 6px solid transparent;
+        border-bottom: 6px solid transparent;
+        border-left: 6px solid #ffffff;
+      }
+      .@{prefixClsTourArrowPlacementRight} {
+        position: absolute;
+        left: 0px;
+        top: 50%;
+        transform: translate(-100%, -50%);
+
+        display: block;
+        pointer-events: none;
+        overflow: hidden;
+
+        width: 0;
+        height: 0;
+        border-top: 6px solid transparent;
+        border-bottom: 6px solid transparent;
+        border-right: 6px solid #ffffff;
       }
 
       &-title {

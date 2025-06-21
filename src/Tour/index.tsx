@@ -35,11 +35,12 @@ const Tour = (props: IProps) => {
       steps={steps}
       className="kawhi-tour"
       renderPanel={(stepProps, stepCurrent) => {
+        const { placement } = stepProps;
+
         return (
           <div className={classNames(`${prefixClsTour}-content`, className)}>
             <div
-              className="rc-tour-content-arrow"
-              // className={`${prefixClsTour}-content-arrow-${stepProps.placement}`}
+              className={`${prefixClsTour}-content-arrow-placement-${placement}`}
             ></div>
             <div className={`${prefixClsTour}-content-title`}>
               {stepProps.title}
@@ -70,7 +71,6 @@ const Tour = (props: IProps) => {
 
               {currentStep > 0 && (
                 <Button
-                  type="gsecondary"
                   size="small"
                   className={`${prefixClsTour}-content-footer-prev`}
                   onClick={() => setCurrentStep(currentStep - 1)}
