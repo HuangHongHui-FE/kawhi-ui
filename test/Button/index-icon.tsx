@@ -8,7 +8,7 @@ const Index = () => {
         icon={<i className="iconfont icon-kawhi-icon-sousuo" />}
         iconPosition="start"
       >
-        Primary Button
+        start Button
       </Button>
       &nbsp;&nbsp;&nbsp;&nbsp;
       <Button
@@ -16,7 +16,7 @@ const Index = () => {
         icon={<i className="iconfont icon-kawhi-icon-sousuo" />}
         iconPosition="end"
       >
-        Primary Button
+        end Button
       </Button>
       &nbsp;&nbsp;&nbsp;&nbsp;
       <Button

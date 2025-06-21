@@ -34,10 +34,17 @@ import React from 'react';
 const Index = () => {
   return (
     <div>
-      <Button type="primary" size="small">Primary Button</Button>
+      <Button type="primary" size="small">
+        small Button
+      </Button>
           
-      <Button type="primary" size="default">Default Button</Button>    
-      <Button type="primary" size="large">Dashed Button</Button>
+      <Button type="primary" size="default">
+        default Button
+      </Button>
+          
+      <Button type="primary" size="large">
+        large Button
+      </Button>
     </div>
   );
 };
@@ -58,7 +65,7 @@ const Index = () => {
         icon={<i className="iconfont icon-kawhi-icon-sousuo" />}
         iconPosition="start"
       >
-        Primary Button
+        start Button
       </Button>
           
       <Button
@@ -66,7 +73,7 @@ const Index = () => {
         icon={<i className="iconfont icon-kawhi-icon-sousuo" />}
         iconPosition="end"
       >
-        Primary Button
+        end Button
       </Button>
           
       <Button
@@ -91,7 +98,7 @@ const Index = () => {
   return (
     <div>
       <Button type="primary" disabled>
-        Primary Button
+        disabled Button
       </Button>
     </div>
   );
