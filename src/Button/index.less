@@ -1,0 +1,96 @@
+@prefixCls: 'kawhi';
+@prefixClsButton: ~'@{prefixCls}-button';
+
+// type
+@prefixClsButtonTypePrimary: ~'@{prefixClsButton}-type-primary';
+@prefixClsButtonTypeDefault: ~'@{prefixClsButton}-type-default';
+@prefixClsButtonTypeDashed: ~'@{prefixClsButton}-type-dashed';
+@prefixClsButtonTypeText: ~'@{prefixClsButton}-type-text';
+@prefixClsButtonTypeLink: ~'@{prefixClsButton}-type-link';
+
+// size
+@prefixClsButtonSizeSmall: ~'@{prefixClsButton}-size-small';
+@prefixClsButtonSizeDefault: ~'@{prefixClsButton}-size-default';
+@prefixClsButtonSizeLarge: ~'@{prefixClsButton}-size-large';
+
+// disabled
+@prefixClsButtonDisabled: ~'@{prefixClsButton}-disabled';
+
+.@{prefixClsButton} {
+  cursor: pointer;
+  border: none;
+  border-radius: 6px;
+  height: 32px;
+}
+
+// type
+.@{prefixClsButtonTypePrimary} {
+  background-color: rgb(22, 119, 255);
+  color: rgb(255, 255, 255);
+  &:hover {
+    background-color: rgba(22, 119, 255, 0.8);
+  }
+}
+
+.@{prefixClsButtonTypeDefault} {
+  background-color: rgb(255, 255, 255);
+  color: rgba(0, 0, 0, 0.88);
+  border: 1px solid rgb(217, 217, 217);
+
+  &:hover {
+    background-color: rgb(245, 245, 245);
+  }
+}
+
+.@{prefixClsButtonTypeDashed} {
+  background-color: rgb(255, 255, 255);
+  color: rgba(0, 0, 0, 0.88);
+  border: 1px dashed rgb(217, 217, 217);
+
+  &:hover {
+    background-color: rgb(245, 245, 245);
+    color: rgba(22, 119, 255, 0.88);
+    border: 1px dashed rgb(22, 119, 255);
+  }
+}
+
+.@{prefixClsButtonTypeText} {
+  background-color: transparent;
+  color: rgba(0, 0, 0, 0.88);
+
+  &:hover {
+    background-color: rgb(245, 245, 245);
+  }
+}
+
+.@{prefixClsButtonTypeLink} {
+  background-color: transparent;
+  color: rgba(22, 119, 255);
+
+  &:hover {
+    color: rgba(22, 119, 255, 0.6);
+  }
+}
+
+// size
+.@{prefixClsButtonSizeSmall} {
+  height: 24px;
+  font-size: 14px;
+}
+
+.@{prefixClsButtonSizeDefault} {
+  height: 32px;
+  font-size: 14px;
+}
+
+.@{prefixClsButtonSizeLarge} {
+  height: 40px;
+  font-size: 16px;
+}
+
+// disabled
+.@{prefixClsButtonDisabled} {
+  cursor: not-allowed;
+  background-color: rgba(0, 0, 0, 0.1);
+  color: rgba(0, 0, 0, 0.25);
+}

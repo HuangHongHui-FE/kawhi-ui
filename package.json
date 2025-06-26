@@ -71,5 +71,9 @@
     "react": "^18.0.0",
     "react-dom": "^18.0.0",
     "stylelint": "^14.9.1"
+  },
+  "dependencies": {
+    "@rc-component/tour": "^2.1.6",
+    "classnames": "^2.5.1"
   }
 }
