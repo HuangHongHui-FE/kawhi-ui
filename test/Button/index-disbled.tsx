@@ -4,7 +4,7 @@ const Index = () => {
   return (
     <div>
       <Button type="primary" disabled>
-        Primary Button
+        disabled Button
       </Button>
     </div>
   );
