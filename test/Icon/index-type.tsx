@@ -14,7 +14,11 @@ const Index = () => {
   return (
     <div className="icon-type-content">
       <div onClick={() => handleCopy('icon-kawhi-cuowu')}>
-        <Icon type="icon-kawhi-cuowu" style={{ fontSize: '40px' }} />
+        <Icon
+          type="icon-kawhi-cuowu"
+          style={{ fontSize: '40px' }}
+          className="cuowu"
+        />
       </div>
       <div onClick={() => handleCopy('icon-kawhi-wenhao-yuanquan')}>
         <Icon type="icon-kawhi-wenhao-yuanquan" style={{ fontSize: '40px' }} />
@@ -169,13 +173,17 @@ const Index = () => {
         <Icon type="icon-kawhi-shujuji" style={{ fontSize: '40px' }} />
       </div>
       <div onClick={() => handleCopy('icon-kawhi-loudou')}>
-        <Icon type="icon-kawhi-loudou" style={{ fontSize: '40px' }} />
+        <Icon type="icon-kawhi-loudou" style={{ fontSize: '40px' }} spin />
       </div>
-      <div onClick={() => handleCopy('icon-kawhi-kaifaji')}>
-        <Icon type="icon-kawhi-kaifaji" style={{ fontSize: '40px' }} />
+      <div onClick={() => handleCopy('icon-kawhi-loading')}>
+        <Icon
+          type="icon-kawhi-loading"
+          style={{ fontSize: '40px', color: 'blue' }}
+          spin
+        />
       </div>
       <div onClick={() => handleCopy('icon-kawhi-shili')}>
-        <Icon type="icon-kawhi-shili" style={{ fontSize: '40px' }} />
+        <Icon type="icon-kawhi-shili" style={{ fontSize: '40px' }} spin />
       </div>
     </div>
   );
