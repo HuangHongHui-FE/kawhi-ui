@@ -50,4 +50,11 @@ MIT
 
 ## __todo
 
-验证组件支持的react版本
+* [ ]  验证组件支持的react版本
+* [ ]  组件支持class,style入参设置
+* [ ]  className写法优化
+  ```jsx
+  {classNames(prefixClsIcon, `iconfont ${type}`, className, {
+          [`${prefixClsIcon}-spin`]: spin,
+        })}
+  ```
