@@ -9,13 +9,15 @@ interface IProps {
   children?: React.ReactNode;
   size?: 'small' | 'default' | 'large';
   indicator?: React.ReactNode;
+  style?: React.CSSProperties;
+  tip?: string;
 }
 
 // 声明全局的ts
 const prefixClsSpin = `${prefixCls}-spin`;
 
 const Spin = (props: IProps) => {
-  const { spinning, children, size = 'default', indicator } = props;
+  const { spinning, children, size = 'default', indicator, style, tip } = props;
 
   return (
     <div className={prefixClsSpin}>
@@ -28,8 +30,11 @@ const Spin = (props: IProps) => {
             <Icon
               type="icon-kawhi-loading"
               className={`${prefixClsSpin}-size-${size}`}
+              style={style}
               spin
             />
+            // __todo
+            // <span className={`${prefixClsSpin}-tip`}>{tip}</span>
           )}
         </div>
       )}
