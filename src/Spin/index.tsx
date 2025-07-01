@@ -27,14 +27,15 @@ const Spin = (props: IProps) => {
           {indicator ? (
             indicator
           ) : (
-            <Icon
-              type="icon-kawhi-loading"
-              className={`${prefixClsSpin}-size-${size}`}
-              style={style}
-              spin
-            />
-            // __todo
-            // <span className={`${prefixClsSpin}-tip`}>{tip}</span>
+            <>
+              <Icon
+                type="icon-kawhi-loading"
+                className={`${prefixClsSpin}-size-${size}`}
+                style={style}
+                spin
+              />
+              <span className={`${prefixClsSpin}-tip`}>{tip}</span>
+            </>
           )}
         </div>
       )}
