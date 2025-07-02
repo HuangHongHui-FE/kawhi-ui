@@ -25,9 +25,12 @@
 #### API
 
 
-| 参数      | 说明      | 类型          | 默认值 |
-| --------- | --------- | ------------- | ------ |
-| type      | icon样式  | string        | -      |
-| className | class名称 | string        | -      |
-| style     | 样式      | CSSProperties | -      |
-| spin      | 旋转      | boolean       | false  |
+| 参数      | 说明        | 类型                      | 默认值  |
+| --------- | ----------- | ------------------------- | ------- |
+| spinning  | 显隐        | boolean                   | false   |
+| children  | loading区域 | ReactNode                 | -       |
+| size      | 大小        | default \| small \| large | default |
+| type      | icon样式    | string                    | -       |
+| indicator | 指示器      | ReactNode                 | -       |
+| style     | 样式        | CSSProperties             | -       |
+| className | class名称   | string                    | -       |
