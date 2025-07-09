@@ -15,18 +15,21 @@ interface IProps {
 const prefixClsEmpty = `${prefixCls}-empty`;
 
 const Empty = (props: IProps) => {
-  const { className, description, imageStyle, image, ...rest } = props;
+  const {
+    className,
+    description,
+    imageStyle,
+    image = 'https://zcy-gov-open-doc.oss-cn-north-2-gov-1.aliyuncs.com/1024FPA/null/20257/55c6bb72-398c-4dd7-8527-35d87fcaf8e7.jpg',
+    ...rest
+  } = props;
 
   return (
     <div className={classNames(prefixClsEmpty, className)} {...rest}>
       <div className={`${prefixClsEmpty}-image`}>
-        {image ? (
-          image
+        {typeof image === 'string' ? (
+          <img src={image} style={imageStyle} />
         ) : (
-          <img
-            src="https://zcy-gov-open-doc.oss-cn-north-2-gov-1.aliyuncs.com/1024FPA/null/20257/55c6bb72-398c-4dd7-8527-35d87fcaf8e7.jpg"
-            style={imageStyle}
-          />
+          image
         )}
       </div>
       <div className={`${prefixClsEmpty}-description`}>
