@@ -1,0 +1,1 @@
+"use strict";(self.webpackChunkkawhi_ui=self.webpackChunkkawhi_ui||[]).push([[400],{88631:function(a,n,u){u.r(n);var i=u(67294),t=u(85893),E=function(){return(0,t.jsx)("div",{children:"\u9875\u9762\u627E\u4E0D\u5230\uFF0C\u8BF7\u68C0\u67E5\u8DEF\u7531!"})};n.default=E}}]);
