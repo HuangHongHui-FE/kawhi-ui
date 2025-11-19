@@ -9,7 +9,7 @@ export default defineConfig({
   },
   themeConfig: {
     name: 'kawhi-ui',
-    logo: 'https://domain.com/favicon.ico',
+    logo: 'https://zcy-gov-open-doc.oss-cn-north-2-gov-1.aliyuncs.com/1072PT/null/202511/498d75c1-a8ca-4c9f-b4eb-13ec6ad02b67.png',
     prefersColor: {
       default: 'auto',
       switch: true,
