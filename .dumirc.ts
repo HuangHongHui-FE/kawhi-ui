@@ -2,8 +2,10 @@ import { defineConfig } from 'dumi';
 
 export default defineConfig({
   outputPath: 'docs-dist',
+  base: '/kawhi-ui/',
+  publicPath: '/kawhi-ui/',
   define: {
-    'prefixCls': 'kawhi'
+    prefixCls: 'kawhi',
   },
   themeConfig: {
     name: 'kawhi-ui',
