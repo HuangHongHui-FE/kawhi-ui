@@ -5,9 +5,26 @@
 
 A react library developed with dumi
 
-## Usage
+> 文档在线预览地址：[kawhi-ui 文档站](https://huanghonghui-fe.github.io/kawhi-ui/)
 
-TODO
+## 快速开始
+
+```bash
+# 安装
+npm install kawhi-ui
+# 或者
+yarn add kawhi-ui
+```
+
+```tsx
+import { Button } from 'kawhi-ui';
+
+export default () => <Button type="primary">Hello kawhi-ui</Button>;
+```
+
+## 组件示例
+
+更多示例请直接访问上方在线文档站，所有 README 中的代码都能在该页面实时运行。
 
 ## Options
 
@@ -33,6 +50,9 @@ $ yarn run docs:build
 
 # Locally preview the production build.
 $ yarn run docs:preview
+
+# 部署文档到 GitHub Pages
+$ yarn run docs:deploy
 
 # check your project for potential problems
 $ yarn run doctor
